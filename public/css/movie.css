@@ -1,0 +1,9 @@
+#section1{
+    width: 100vw;
+    max-height: 90vh;
+}
+
+#section1 video{
+    max-height: 90vh;
+    width: 99vw;
+}

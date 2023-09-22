@@ -1,0 +1,17 @@
+#section1{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/img3.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sdiv{
+    margin: auto;
+    padding: 2rem;
+    max-width: 350px;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px white;
+    background-color: rgb(0, 0, 0, 0.5);
+}

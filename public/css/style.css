@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container-fluid{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+nav{
+    background-color: black;
+    color: white;
+}
+
+nav .collapse ul{
+    margin: auto !important;
+}
+
+a.nav-link.btn{
+    color: white;
+    background-color: green;
+}
+
+a.nav-link.btn:hover{
+    background-color: darkgreen;
+}
+
+.navbar-brand{
+    color: green;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: greenyellow;
+}
+
+.nav-link:hover{
+    color: greenyellow;
+}
+
+.nav-link.active{
+    color: greenyellow !important;
+}
+
+
+
+
+
+
+
+
+
+
+.fc1 p a{
+    color: greenyellow;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.fc1 p a:hover{
+    color: green;
+}
+
+.fc2{
+    padding-right: 3rem;
+    text-align: justify;
+}
+
+.fc2 h3{
+    color: green;
+}
+
+.fc3 h4{
+    color: lightgreen;
+}
+
+.fc3 i{
+    color: greenyellow;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.fc3 i:hover{
+    color: green;
+    transform: scale(1.05);
+}
+
+.copyright{
+    color: rgb(76, 91, 76);
+}

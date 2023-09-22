@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mania - Admin</title>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/bbfffbaf77.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/css/admin.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Movie Mania - Admin</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="/adminmovies">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/adninusers">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/adminlogout">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <div id="section1" class="container-fluid">
+        <br><br>
+        <h1 class="text-center">USERS</h1>
+        <br><br>
+        <form method="post" action="/adminaddmovie">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="moviename" name="name" placeholder="Movie Name">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="startdate" name="startdate" placeholder="Start Date (__/__/__)">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="enddate" name="enddate" placeholder="End Date (__/__/__)">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="duration" name="duration" placeholder="Duration (__:__:__)">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="English" name="English" id="lang1">
+                <label class="form-check-label" for="lang1">
+                  English
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Hindi" name="Hindi" id="lang2">
+                <label class="form-check-label" for="lang2">
+                  Hindi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Bengali" name="Bengali" id="lang3">
+                <label class="form-check-label" for="lang3">
+                  Bengali
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Telegu" name="Telegu" id="lang4">
+                <label class="form-check-label" for="lang4">
+                  Telegu
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Tamil" name="Tamil" id="lang5">
+                <label class="form-check-label" for="lang5">
+                  Tamil
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Kannada" name="Kannadda" id="lang6">
+                <label class="form-check-label" for="lang6">
+                  Kannadda
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Marathi" name="Marathi" id="lang7">
+                <label class="form-check-label" for="lang7">
+                  Marathi
+                </label>
+            </div>
+            <br>
+            <select class="form-select" name="genre" aria-label="Default select example">
+                <option selected disabled>Select Genre</option>
+                <option value="Action">Action</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Horror">Horror</option>
+            </select>
+            <br>
+            <div class="mb-3">
+              <input type="number" class="form-control" id="price" name="price" placeholder="Price">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="2D" name="v2d" id="v2d">
+                <label class="form-check-label" for="v2d">
+                  2D
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="3D" name="v3d" id="v3d">
+                <label class="form-check-label" for="v3d">
+                  3D
+                </label>
+            </div>
+            <br>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          <br><br>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <!-- Scripts -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

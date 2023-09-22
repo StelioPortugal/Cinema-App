@@ -1,0 +1,35 @@
+.navbar{
+    background-color: aquamarine;
+    color: white;
+}
+
+.navbar--brand{
+    color: grey !important;
+}
+
+.nav-link{
+    color: grey;
+}
+
+.active{
+    color: black !important;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+thead{
+    border-bottom: 5px solid black;
+}
+
+tbody{
+    border-bottom: 1px solid black;
+    line-height: 3rem;
+}
+
+form{
+    width: 80%;
+    margin: auto;
+}
